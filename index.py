@@ -81,6 +81,10 @@ def AutorRegistro():
 def lib():
     return render_template('autor.html')
 
+@app.route('/prueba')
+def prueba():
+    return render_template('prueba.html')
+
 @app.route('/Libros', methods=['GET','POST'])
 def LibrosRegistro():
     lista = Autor.query.all()
