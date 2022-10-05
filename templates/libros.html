@@ -4,19 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Libreria Lopes</title>
-    <link rel="stylesheet" href="/static/elEstilo" type="text/css">
+    <link rel="stylesheet" href="/static/Estilos/style.css" type="text/css">
 </head>
 
 <body>
     <center>
-        <h1>DATOS DEL LIBRO</h2>
+        <h1 style="color: cornsilk;">DATOS DEL LIBRO</h1>
     </center>
 
     <form method="POST" action="{{url_for('LibrosRegistro')}}" >   
     <div class="form-row">
         <div class="form-group col-md-6">
-            <label>Autor del Libro</label>
+            <label style="color:cornsilk;">Autor del libro:</label>
             <select class="form-control"  name="autor_id"  >
                 {% for LibrosRegistro in lista %}
                     <option value="{{LibrosRegistro.id}}">{{LibrosRegistro.nombre}}</option>
@@ -24,7 +23,7 @@
               </select>
         </div>
         <div class="form-group col-md-6">
-            <label>Titulo: </label>
+            <label style="color:rgb(255, 255, 255);">Titulo: </label>
             <input  class="form-control"  name="titulo" type="text" >
         </div>
     </div>
@@ -32,7 +31,7 @@
 
     <div class="row">
         <div class="col">
-            <label>Género</label>
+            <label style="color:azure;">Género:</label>
             <select class="col-sm-7  form-control " name="genero">
                 <option disabled selected >-Seleccionar-</option>
                 <option value="novela">Novela</option>
@@ -59,7 +58,7 @@
         </div>
     </div>
     <br>
-    <input class="btn btn-primary" type="submit" value="AGREGAR">
+    <input class="btn btn-dark" type="submit" value="AGREGAR">
     </form>
 </body>
 

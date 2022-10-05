@@ -80,6 +80,7 @@ details .detalles{
 
 div ul{
   display:inline-block; 
+  background-color: rgb(255, 0, 0);
 }
 
 #elMenu{

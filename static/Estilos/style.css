@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Ubuntu:ital@1&display=swap");
+.form-row {
+  background-color: rgba(110, 88, 15, 0.582);
+}
+
+.titulo {
+  text-align: center;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.label {
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.row {
+  background-color: rgba(110, 88, 15, 0.582);
+}
+
+.table {
+  text-align: center;
+}
+.table .fila {
+  color: rgba(204, 187, 38, 0.863);
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.651);
+}
+.table .fila1 {
+  background-color: rgba(87, 84, 68, 0.815);
+  font-size: 1.5em;
+  font-family: "Ubuntu", sans-serif;
+  color: aliceblue;
+}
+.table .fila2 {
+  background-color: rgba(255, 255, 255, 0.774);
+  font-size: 1.5em;
+  font-family: "Ubuntu", sans-serif;
+}
+.table .d-flex {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(105, 99, 80, 0.61);
+}
+
+.TB1 .fil {
+  background-color: rgba(3, 3, 3, 0.712);
+  color: aliceblue;
+  color: gold;
+  text-align: center;
+  font-size: 1.6em;
+}
+.TB1 .fil1 {
+  background-color: rgba(53, 50, 31, 0.849);
+  color: honeydew;
+}
+.TB1 .fil2 {
+  background-color: rgba(197, 167, 31, 0.87);
+  color: ghostwhite;
+  font-size: 1.5em;
+}
+
+.titulo1 {
+  font-size: 2em;
+  color: gold;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}/*# sourceMappingURL=style.css.map */

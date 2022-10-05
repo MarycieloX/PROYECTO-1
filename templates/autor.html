@@ -2,22 +2,27 @@
 {% block content %}
 
 <body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/static/Estilos/style.css" type="text/css">
+</head>
   <center>
-    <h1>DATOS DE TU AUTOR FAVORITO</h2>
+    <h1 style="color:ghostwhite;">DATOS DE TU AUTOR FAVORITO</h2>
   </center>
   <form method="POST" action="{{url_for('AutorRegistro')}}" >
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label >Nombre: </label>
+        <label style="color:cornsilk;">Nombre: </label>
         <input class="form-control" name="nombre" type="text" >
       </div>
       <div class="form-group col-md-6">
-        <label>Apellido: </label>
+        <label style="color:cornsilk;">Apellido: </label>
         <input class="form-control"  name="apellido" type="text" >
       </div>
     </div>
     <div>
-      <label >Region de Nacimiento:</label>
+      <label style="color:cornsilk;">Region de Nacimiento:</label>
       <select  class="col-sm-7  form-control 6 " name="region">
         <option disabled selected>-Seleccionar-</option>
         <option value="Amazonas">Amazonas</option>
@@ -50,7 +55,7 @@
       </select>
     </div>
     <br/>
-    <input class="btn btn-primary" type="submit" value="AGREGAR">
+    <input class="btn btn-dark" type="submit" value="AGREGAR">
 
   </form>
 

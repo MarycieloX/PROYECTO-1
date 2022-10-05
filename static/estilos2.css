@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
 body {
   background-image: url(https://static01.nyt.com/images/2015/10/24/opinion/24manguel/24manguel-superJumbo.jpg);
   background-size: cover;
@@ -62,7 +63,7 @@ body {
   text-align: center;
   flex-direction: column;
   color: rgb(255, 255, 255);
-  background-color: rgba(255, 248, 220, 0.089);
+  background-color: rgba(110, 97, 41, 0.603);
 }
 .hero .container h1 {
   border: solid gold;
@@ -89,7 +90,7 @@ body {
 }
 .features-section .container .div-right {
   width: 50%;
-  background-color: #e62931;
+  background-color: rgba(116, 101, 20, 0.6980392157);
   color: white;
   padding: 3%;
   box-sizing: border-box;
@@ -98,7 +99,7 @@ body {
 .features-section .container .div-left {
   width: 50%;
   background-color: #e0d6c0;
-  color: #e62931;
+  color: #70631a;
   padding: 3%;
   box-sizing: border-box;
   text-align: center;
@@ -108,13 +109,6 @@ body {
 }
 .features-section .container p {
   font-family: "Roboto Mono", monospace;
-}
-
-footer {
-  grid-area: footer;
-  margin: auto auto;
-  color: rgba(221, 192, 27, 0.938);
-  font-family: "Arvo", serif;
 }
 
 @media only screen and (max-width: 768px) {
@@ -171,4 +165,38 @@ footer {
     font-weight: bold;
     color: #d1981c;
   }
+}
+.content {
+  text-align: center;
+  background-color: black;
+  width: 100%;
+}
+
+.content h1 {
+  font-size: 70px;
+  color: #fff;
+  font-size: 600;
+  transition: 0.5s;
+  font-family: "Silkscreen", cursive;
+}
+
+.content h1:hover {
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+
+.content a {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.content a:hover {
+  color: rgba(158, 136, 37, 0.815);
+  font-weight: bold;
 }/*# sourceMappingURL=estilos2.css.map */

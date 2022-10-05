@@ -1,29 +1,36 @@
 {% extends 'base.html' %}
 {% block content %}
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="/static/Estilos/style.css" type="text/css">
+</head>
+<h1 class="titulo" style="color:bisque;">VOTA POR TU ESCRITOR FAVORITO!</h1>
+<BR></BR>
 <table class="table">
-    <thead class="thead-dark">
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Autor</th>
-        <th scope="col">Libro</th>
-        <th scope="col">Puntaje</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for consulta in consultas %}
-      <tr>
-        <th scope="row">{{loop.index}}</th>
-        <td>{{consulta.autor_c}}</td>
-        <td>{{consulta.libro_c}}</td>
+  <thead class="thead-dark">
+    <tr>
+      <th class="row1" scope="col">N°</th>
+      <th scope="col">Autor</th>
+      <th scope="col">Libro</th>
+      <th scope="col">VOTE!</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for consulta in consultas %}
+    <tr class="table">
+      <th class="fila" scope="row">{{loop.index}}</th>
+      <td class="fila1">{{consulta.autor_c}}</td>
+      <td class="fila2">{{consulta.libro_c}}</td>
 
-        <form method="POST" action="{{url_for('Votar', titulo=consulta.libro_c)}}">
-          <td class="d-flex">
-            <button type="submit" class="btn btn-primary">Votar</button>
-          </td>
-        </form>
-      </tr>
-      {% endfor %} 
-    </tbody>
-  </table>
+      <form method="POST" action="{{url_for('Votar', titulo=consulta.libro_c)}}">
+        <td class="d-flex">
+          <button type="submit" class="btn btn-outline-warning">Votar</button>
+        </td>
+      </form>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 {% endblock %}

@@ -1,20 +1,29 @@
 {% extends 'base.html' %}
 {% block content %}
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="/static/Estilos/style.css" type="text/css">
+</head>
+<h1 class="titulo1">RANKING NACIONAL DE ESCRITORES!</h1>
+<br>
 <table class="table">
     <thead class="thead-dark">
       <tr>
-        <th scope="col">Ranking</th>
-        <th scope="col">Puntos</th>
+        <th scope="col">Posición</th>
         <th scope="col">Autor</th>
+        <th scope="col">Nro de votos</th>
+
       </tr>
     </thead>
     <tbody>
       {% for consulta in consultas %}
-      <tr>
-        <th scope="row">{{loop.index}}</th>
-        <td>{{consulta.score}}</td>
-        <td>{{consulta.autor}}</td>
+      <tr class="TB1">
+        <th class="fil" scope="row">{{loop.index}}</th>
+        <td class="fil2">{{consulta.autor}}</td>
+        <td class="fil1">{{consulta.score}}</td>
+
       </tr>
       {% endfor %} 
     </tbody>

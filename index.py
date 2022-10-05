@@ -11,7 +11,7 @@ app = Flask(__name__)
  
 #Add Database local
 #app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+mysqldb://root@127.0.0.1:3308/proyectos"
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:123456@localhost/project"
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://admin:123456789@dbaws.cwntvuamkmig.us-east-1.rds.amazonaws.com/Proyecto"
 
 #Database concectado a Amazon WS
 #app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://Alex:Admin1234@44.202.81.95/examen"
