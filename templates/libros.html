@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Libreria Lopes</title>
+    <link rel="stylesheet" href="/static/elEstilo" type="text/css">
+</head>
+
+<body>
+    <center>
+        <h1>DATOS DEL LIBRO</h2>
+    </center>
+
+    <form method="POST" action="{{url_for('LibrosRegistro')}}" >   
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Autor del Libro</label>
+            <select class="form-control"  name="autor_id"  >
+                {% for LibrosRegistro in lista %}
+                    <option value="{{LibrosRegistro.id}}">{{LibrosRegistro.nombre}}</option>
+                {% endfor %}
+              </select>
+        </div>
+        <div class="form-group col-md-6">
+            <label>Titulo: </label>
+            <input  class="form-control"  name="titulo" type="text" >
+        </div>
+    </div>
+    <br />
+
+    <div class="row">
+        <div class="col">
+            <label>Género</label>
+            <select class="col-sm-7  form-control " name="genero">
+                <option disabled selected >-Seleccionar-</option>
+                <option value="novela">Novela</option>
+                <option value="Leyenda">Leyenda</option>
+                <option value="Mito">Mito</option>
+                <option value="Fabula">Fabula</option>
+                <option value="Cantar">Cantar de Gesta</option>
+                <option value="Drama">Drama</option>
+                <option value="Terror">Terror y Thriller</option>
+                <option value="Fantasia">Fantasia</option>
+                <option value="Satira">Satira</option>
+                <option value="Elegia">Elegia</option>
+                <option value="Ensayo">Ensayo</option>
+                <option value="novelaGrafica">Novela Grafica</option>
+                <option value="Poesia">Poesia</option>
+                <option value="Novelahistorica">Novela Historica</option>
+                <option value="NovelaRomantica">Novela Romantica</option>
+                <option value="Autoayuda">Autoayuda</option>
+                <option value="Arte">Arte</option>
+                <option value="Bibiografia">Bibiografia</option>
+                <option value="Historia">Historia</option>
+                <option value="FiccionNarrativa">Ficcion Narrativa</option>
+            </select>
+        </div>
+    </div>
+    <br>
+    <input class="btn btn-primary" type="submit" value="AGREGAR">
+    </form>
+</body>
+
+<footer>
+
+</footer>
+
+{% endblock %}

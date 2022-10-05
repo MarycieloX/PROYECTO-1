@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<body>
+  <center>
+    <h1>DATOS DE TU AUTOR FAVORITO</h2>
+  </center>
+  <form method="POST" action="{{url_for('AutorRegistro')}}" >
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label >Nombre: </label>
+        <input class="form-control" name="nombre" type="text" >
+      </div>
+      <div class="form-group col-md-6">
+        <label>Apellido: </label>
+        <input class="form-control"  name="apellido" type="text" >
+      </div>
+    </div>
+    <div>
+      <label >Region de Nacimiento:</label>
+      <select  class="col-sm-7  form-control 6 " name="region">
+        <option disabled selected>-Seleccionar-</option>
+        <option value="Amazonas">Amazonas</option>
+        <option value="Ancash">Áncash</option>
+        <option value="Apurimac">Apurímac</option>
+        <option value="Tacna">Arequipa</option>
+        <option value="Ayacucho">Ayacucho</option>
+        <option value="Ancash">Áncash</option>
+        <option value="Apurimac">Apurímac</option>
+        <option value="Tacna">Arequipa</option>
+        <option value="Cajamarca">Cajamarca</option>
+        <option value="Callao">Callao</option>
+        <option value="Cusco">Cusco</option>
+        <option value="Huancavelica">Huancavelica</option>
+        <option value="Huanuco">Huánuco</option>
+        <option value="Ica">Ica</option>
+        <option value="Junin">Junín</option>
+        <option value="LaLibertad">La Libertad	</option>
+        <option value="Lambayeque">Lambayeque</option>
+        <option value="Lima">Lima </option>
+        <option value="	MadredeDios">	Madre de Dios</option>
+        <option value="Moquegua">Moquegua</option>
+        <option value="Pasco">Pasco</option>
+        <option value="Piura">Piura</option>
+        <option value="Puno">Puno</option>
+        <option value="SanMartín">San Martín</option>
+        <option value="Tacna">Tacna</option>
+        <option value="Tumbes">Tumbes</option>
+        <option value="Ucayali">Ucayali </option>
+      </select>
+    </div>
+    <br/>
+    <input class="btn btn-primary" type="submit" value="AGREGAR">
+
+  </form>
+
+</body>
+
+{% endblock %}

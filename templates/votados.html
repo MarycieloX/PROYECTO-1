@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Ranking</th>
+        <th scope="col">Puntos</th>
+        <th scope="col">Autor</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for consulta in consultas %}
+      <tr>
+        <th scope="row">{{loop.index}}</th>
+        <td>{{consulta.score}}</td>
+        <td>{{consulta.autor}}</td>
+      </tr>
+      {% endfor %} 
+    </tbody>
+  </table>
+{% endblock %}

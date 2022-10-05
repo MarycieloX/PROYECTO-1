@@ -1,0 +1,421 @@
+@font-face {
+
+  font-family: santor;
+  src: url(/static/Estilos/santor\ 1.002.otf);
+}
+
+
+body{
+  background-color: white;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: santor;
+  font-size: 15px;
+  width: 1450px ;
+}
+
+
+.logo-container img {
+  max-width: 250px;
+  margin-left: 55%;
+}
+
+.container {
+  width: 127%;
+  height: 30px;
+  background-color: #3b7bac;
+  color: rgb(0, 0, 0);
+  
+  
+}
+  
+.textoEnvio{
+  padding: 5px;
+  text-align: center;
+  margin: 0 0 10px;
+  
+}
+
+.p{
+    padding-left: 10px;
+}
+
+details .detalles{
+  width: 200px;
+}
+
+.col-xs-12{
+  display: inline-flex;
+  
+}
+
+.columnasMenu{
+  display: inline-flex;
+  
+}
+
+#libros{
+  float: left;
+  padding: 10px;
+  padding-bottom: 50px;
+}
+
+#titulos{
+  padding-left: 10px;
+  color: black; 
+}
+
+#menuhorizontal {
+  width: 15%;
+  list-style-type:none;
+  } 
+  
+#menuhorizontal a { 
+  font-size: 20px;
+  width:100px;
+  text-decoration:none;
+  text-align:center;
+  color:#363535;
+  padding: 10px 15px;
+}
+
+div ul{
+  display:inline-block; 
+}
+
+#elMenu{
+  text-align: center;
+}
+  #menuhorizontal a:hover {
+  color: orange;
+  transition: color 0.4s linear 0.2s;
+  }
+
+#tituloNovedades{
+  padding-left: 1%;
+}
+
+#tamanioLibros{
+  height: 337px;
+  width: 220px;
+  transition: all 300ms;
+}
+
+#tamanioLibros:hover{
+  transform: scale(1.05);
+  
+}
+
+#boton {
+  border: 1px solid #2e518b;
+  padding: 10px; 
+  background-color: #2e518b; 
+  color: #ffffff; 
+  text-decoration: none; 
+  text-transform: uppercase; 
+  font-family: 'Helvetica', sans-serif;
+  border-radius: 50px;
+
+  }
+.pie-pagina{
+  width: 126%;
+  background-color: #3b7bac;
+  display: inline-block;
+}
+.pie-pagina .grupo-1{
+  background-color: #3b7bac;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+  float: left;
+}
+
+.pie-pagina .box{
+ 
+  float: left;
+}
+
+.pie-pagina .metodosPago{
+  padding: 20px;
+ 
+  padding-left: 20px;
+  float: left;
+}
+
+.pie-pagina .miNombreFinal{
+  color: #fff;
+  padding-top: 100px;
+  padding-right: 25px;
+  float: right;
+}
+
+@media (max-width:952px) {
+  
+  #menuhorizontal {
+    width: 10%;
+    list-style-type:none;
+    } 
+
+#menuhorizontal a { 
+  font-size: 60px;
+  font-family: sans-serif;
+
+  text-decoration:none;
+  text-align:center;
+  color:#363535;
+  padding: 10px 15px;
+  
+  }
+  
+  div ul{
+    display:inline-block; 
+  }
+  
+  #elMenu{
+    text-align: left;
+  }
+
+.logo-container img {
+  max-width: 550px;
+  margin-left: 27%;
+}
+
+.col-xs-12{
+  
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+#libros{
+  float: left;
+  padding: 10px;
+  
+}
+
+.textoEnvio{
+  padding-bottom: 75px;
+}
+
+.textoEnvio p{
+  text-align: left;
+  width: 1500px;
+  padding-bottom: 15px;
+  font-size: 40px;
+  
+}
+
+#titulos{
+  padding-left: 10px;
+  font-size: 55px;
+  color: black;
+}
+
+p{
+  font-size: 55px;
+}
+
+details{
+  font-size: 50px;
+}
+
+details .detalles{
+  width: 350px;
+}
+
+#tamanioLibros{
+  height: 707px;
+  width: 490px;
+ 
+}
+
+#boton {
+  border: 1px solid #2e518b; 
+  padding: 12px; 
+  background-color: #2e518b; 
+  color: #ffffff; 
+  text-decoration: none; 
+  text-transform: uppercase; 
+  font-family: 'Helvetica', sans-serif; 
+  border-radius: 50px; 
+  font-size: 20px;
+  }
+
+.pie-pagina{
+    width: 126%;
+    background-color: #3b7bac;
+    display: inline-block;
+}
+  
+.pie-pagina .grupo-1{
+    background-color: #3b7bac;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    float: left;
+}
+  .pie-pagina .box{
+   
+    float: left;
+  }
+  
+  .pie-pagina .metodosPago{
+    padding: 20px;
+   
+    padding-left: 20px;
+    float: left;
+  }
+  
+  .pie-pagina .miNombreFinal{
+    color: #fff;
+    padding-top: 100px;
+    padding-right: 25px;
+    float: right;
+  }
+  
+iframe{
+  width: 350px;
+  height: 250px;
+}
+
+}
+
+@media (max-width:580px) {
+  #menuhorizontal {
+    width: 10%;
+    list-style-type:none; 
+    } 
+
+
+#menuhorizontal a { 
+  font-size: 60px;
+  font-family: sans-serif;
+  text-decoration:none;
+  text-align:center;
+  color:#363535;
+  padding: 10px 15px;
+  }
+  
+  div ul{
+    display:inline-block; 
+  }
+  
+  #elMenu{
+    text-align: left;
+  }
+
+  
+.logo-container img {
+  
+  max-width: 550px;
+  margin-left: 27%;
+}
+
+
+.textoEnvio{
+
+ 
+ 
+  padding-bottom: 200px;
+  
+}
+
+.textoEnvio p{
+  font-size: 50px;
+  text-align: left;
+
+  width: 1500px;
+
+  padding-bottom: 15px;
+  
+}
+.col-xs-12{
+  
+  display: grid;
+  grid-template-columns: auto auto ;
+}
+
+#libros{
+  float: left;
+  padding: 10px;
+  
+  padding-left: 50px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  
+}
+
+#titulos{
+  padding-left: 10px;
+  font-size: 55px;
+  color: black; 
+}
+
+p{
+  font-size: 55px;
+}
+
+details{
+  font-size: 55px;
+}
+
+details .detalles{
+  width: 350px;
+}
+
+#tamanioLibros{
+  height: 857px;
+  width: 640px;
+ 
+}
+
+#boton {
+  border: 1px solid #2e518b;
+  padding: 12px;
+  background-color: #2e518b; 
+  color: #ffffff; 
+  text-decoration: none;
+  text-transform: uppercase; 
+  font-family: 'Helvetica', sans-serif; 
+  border-radius: 50px; 
+  font-size: 50px;
+  
+  }
+  .pie-pagina{
+    width: 126%;
+    background-color: #3b7bac;
+    display: inline-block;
+  }
+
+  .pie-pagina .grupo-1{
+    background-color: #3b7bac;
+    
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    float: left;
+  }
+  
+  .pie-pagina .box{
+   
+    float: left;
+  }
+  
+  .pie-pagina .metodosPago{
+    padding: 20px;
+   
+    padding-left: 20px;
+    float: left;
+  }
+  
+  .pie-pagina .miNombreFinal{
+    color: #fff;
+    padding-top: 100px;
+
+    padding-right: 200px;
+    float: right;
+  }
+  
+iframe{
+  width: 350px;
+  height: 250px;
+}
+}
